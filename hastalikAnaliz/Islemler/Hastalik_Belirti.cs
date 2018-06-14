@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace hastalikAnaliz.Islemler
 {
@@ -94,7 +94,8 @@ namespace hastalikAnaliz.Islemler
         AstımortakKoahoksuruk,
         AstımortakKoahhiriltilisolunum,
         AstımortakKoahgogustetikaniklikvesikismahissi,
-        AstımortakKoahsolukalipverirkenislikhissi, nefesdarligi,
+        AstımortakKoahsolukalipverirkenislikhissi,
+        AstımortakKoahnefesdarligi,
 
 
         /*****koah*******/
@@ -111,8 +112,8 @@ namespace hastalikAnaliz.Islemler
         AkcigerKanseriSürekliZature,
         AkcigerKanseriSırtVEkalcadaagri,
         /**BelFitigi**/
-        belvebacaqkagrisi,
-        toparlayarakYurume,
+        BelFitigibelvebacaqkagrisi,
+        BelFitigitoparlayarakYurume,
 
         /**prostatKanseri**/
         prostatKanseriıdraryapmaguclugu,
