@@ -8,54 +8,181 @@ namespace hastalikAnaliz.Islemler
 {
     public enum Hastalik_Belirti
     {  /*nezle**/
-        istahKayib,
-        nefeshizli,
-        DusukAtes,
-        agizKuru,
-        GucsuzGoruntu,
-        burunTikanik,
-        hapsirma,
+        nezleistahKayib,
+        nezlenefeshizli,
+        nezleDusukAtes,
+        nezleagizKuru,
+        nezleGucsuzGoruntu,
+        nezleburunTikanik,
+        nezlehapsirma,
 
         /*****/
         /*Griportaknezle*/
-        ishal,
+        Griportaknezleishal,
         /*******/
         /*Grip*/
-        sogukter_vetitreme,
-        eklemveuzuvagrima,
-        bitkinlik,
-        bulanti,
-        kusma,
+        Gripsogukter_vetitreme,
+        Gripeklemveuzuvagrima,
+        Gripbitkinlik,
+        Gripbulanti,
+        Gripkusma,
 
         /***lejenellozOrtakGrip***/
-        Basagrima,
-        yorgunluk,
-        yuksekAtes,
+        lejenellozOrtakGripBasagrima,
+        lejenellozOrtakGripyorgunluk,
+        lejenellozOrtakGripyuksekAtes,
         /*****/
         /***lejenellozOrtak***/
-        kaslardaagri,
-        huzursuluk,
-        dalginlik,
-        bilincBulanik,
+        lejenellozOrtakkaslardaagri,
+        lejenellozOrtakhuzursuluk,
+        lejenellozOrtakdalginlik,
+        lejenellozOrtakbilincBulanik,
 
 
 
 
         /*Ülser**/
-        midedeYanma,
-        Bulanti,
-        KusmaİleGelenRahatlama,
-        istahsizlik,
-        kilokaybi,
-        siskinlikVegaz,
-        SikAcikma,
+        ÜlsermidedeYanma,
+        ÜlserBulanti,
+        ÜlserKusmaİleGelenRahatlama,
+        Ülseristahsizlik,
+        /// <summary>
+        /// ÜlserAkcigerKanseri
+        /// </summary>
+        ÜlserAkcigerKanserikilokaybi,
+
+
         yemekYediktenSonraMideAgrisi,
-        Hazimsizlik,
 
-        /******/
-        
-        /**********/
 
+        /**ÜlserortakGastrit****/
+        ÜlserortakGastritSikAcikma,
+        ÜlserortakGastritmidedeagri,
+        ÜlserortakGastritsiskinlikVegaz,
+        ÜlserortakGastritHazimsizlik,
+        /***Gastrit*******/
+        GastritmideBölgesindeAgri,
         /***/
+
+
+
+        /**MideKanseri****/
+        MideKanseriasidliGegirme,
+        MideKanserikanamaveYorgunluk,
+        MideKanserikanpıhtı,
+        MideKanseribulantiVeyutmaGucluk,
+        MideKanseriDiskidakan,
+
+        /**TüberkilozBrusella***************/
+        TüberkilozBrusellaatesAtaklari,
+        TüberkilozBrusellausumeTitremeterlemeataklari,
+        TüberkilozBrusellasiddetliKasAgrileri,
+        TüberkilozBrusellaKiloKaybi,
+        TüberkilozBrusellaBulantiKusmaIshal,
+        TüberkilozBrusellaBasAgrisi,
+        TüberkilozBrusellakioKaybi,
+
+
+        /******BoyunFitihi********/
+        BoyunFitihivucuttauyusma,
+        BoyunFitihikolbacaktagucsuzluk,
+        BoyunFitihibulanıkgörme,
+        BoyunFitihiçiftGörme,
+
+
+        /*****AstımortakKoah*********/
+        AstımortakKoahoksuruk,
+        AstımortakKoahhiriltilisolunum,
+        AstımortakKoahgogustetikaniklikvesikismahissi,
+        AstımortakKoahsolukalipverirkenislikhissi, nefesdarligi,
+
+
+        /*****koah*******/
+        koahbalgamcıkarma,
+
+        /*****AkcigerKanseri*****/
+        AkcigerKanserigecmeyenOksuruk,
+        AkcigerKanseriOKsurukteKan,
+        AkcigerKanserigiderekkotulesenGogusagrisi,
+        AkcigerKanseriıstahsizlik,
+        AkcigerKanserisesKisikligi,
+        AkcigerKanserihalsizlik_Yorgunluk,
+        AkcigerKanserikemikagrisi,
+        AkcigerKanseriSürekliZature,
+        AkcigerKanseriSırtVEkalcadaagri,
+        /**BelFitigi**/
+        belvebacaqkagrisi,
+        toparlayarakYurume,
+
+        /**prostatKanseri**/
+        prostatKanseriıdraryapmaguclugu,
+        prostatKanseriıdrarakısındakuvvetazalması,
+        prostatKanseriMenideyadaidrardakangörülmesi,
+        prostatKanseriBosalmaesnasındaagrı,
+        prostatKanseriKasıkbölgesinderahatsızlıkhissi,
+        prostatKanseriKemikagrıları,
+        prostatKanseriSertlesmebozukluğu,
+
+
+
+        /**PanıkAtak*/
+        PanıkAtakGöğüsağrısıyadagöğüstesıkıĢma,
+        PanıkAtakÇarpıntıkalbinkuvvetliyadahızlıvurması,
+        PanıkAtakTerleme,
+        PanıkAtakNefesdarlığıyadaboğulurgibiolma,
+        PanıkAtakSoluğunkesilmesi,
+        BagdönmesisersemlikdüĢecekyadabayılacakgibiolma,
+        UyuĢmayadakarıncalanma,
+        ÜĢümeürpermeyadaatesbasması,                               
+        Bulantıyadakarınağrısı,
+        Titremeyadasarsılma,
+        Kendiniyadaçevresindekilerideğismistuhafvefarklıhissetme,
+        Kontrolünükaybetmeyadaçıldırmakorkusu,
+        Ölümkorkusu,
+
+
+
+
+        /******KalpKrizi*******/
+        KalpKrizigogusagri,
+        KalpKrizibulantiKusma,
+        KalpKrizioksuruk,
+
+
+
+
+        /******Hipertiroid********/
+        HipertiroidÇarpıntı,
+        HipertiroidKilokaybı,
+        HipertiroidKaslardazayıflık,
+        HipertiroidSaçlardaincelmevedökülme,
+        HipertiroidUykusuzluk,
+        HipertiroidNemliciltveciltteincelme,
+        HipertiroidAĢırıterleme,
+        HipertiroidBağırsakhareketlerindeartısveishal,
+        HipertiroidAdetdüzenindebozulma,
+        HipertiroidSinirlivetahammülsüzolmadurumu,
+        HipertiroidGözlerdeileridoğrufırlama,
+        HipertiroidSıcağatahammülsüzlük,
+        HipertiroidErkeklerdememebüyümesi,
+        Tiroitbezindebüyümeolusması,
+        Kemikerimesi,
+        Hiperaktivite,
+        Libidokaybı,
+        Cilttekırmızıyumrular,
+        Agırısusama,
+
+
+        /****sunizit*******/
+        sunizitpastanalakıntı,
+        sunizityuksekates,
+        uzunsurenburunakintisi,
+
+
+
+
+
+        /////***MĠGREN**/
+        ataklibasagrisi,
     }
 }
